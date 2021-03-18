@@ -13,6 +13,18 @@ namespace Salary
 
         List<Employer> EmpLead = new List<Employer>();
 
-        public TeamLead
+        public TeamLead(double salary, string name, string surname)
+        {
+            this.Salary = salary;
+            this.Name = name;
+            this.Surname = surname;
+            this.ID = GenerateID();
+        }
+
+        int GenerateID()
+        {
+            Random id = new Random();
+            return id.Next(1, 10000);
+        }
     }
 }
