@@ -24,9 +24,7 @@ namespace Salary
                 Console.WriteLine("{0} {1}, please, log your time.", worker.Name, worker.Surname);
                 worker.LogTime();
             }
-            
-            //tl.LogTime();
-            //tl.ShowAll(tl.LeadMembers);
+
             tl.CalculateSalary(tl.LeadMembers);
         }
     }
