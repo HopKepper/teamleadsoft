@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>VMakarov.SalaryDev.Domain</AssemblyName>
+    <RootNamespace>VMakarov.SalaryDev.Domain</RootNamespace>
+  </PropertyGroup>
+
+</Project>
