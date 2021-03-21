@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 using VMakarov.SalaryDev.SoftDevCons;
 
 namespace VMakarov.SalaryDev.Domain
@@ -88,6 +90,19 @@ namespace VMakarov.SalaryDev.Domain
             {
                 double paid = worker.LTime * worker.Salary;
                 Console.WriteLine("{0} {1} have {2} per this month. \n", worker.Name, worker.Surname, paid);
+            }
+        }
+
+        public async void ReadMeetingReview()
+        {
+            using (StreamReader sr = new StreamReader(@"E:\vsproj\Salary\review.txt"))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    await Task.Delay(20000);
+                    Console.WriteLine(line);
+                }
             }
         }
     }

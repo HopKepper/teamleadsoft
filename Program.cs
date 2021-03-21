@@ -10,6 +10,7 @@ namespace Salary
         static void Main(string[] args)
         {
             TeamLead tl = new TeamLead(20, "Jame", "Felrt");
+            tl.ReadMeetingReview();
             IWorker eml_a = new Employer(23, "Alex", "Arak");
             IWorker frl_r = new Freelancer(24, "Rob", "Parker");
             IWorker eml_ar = new Employer(8, "Artur", "Arak");
@@ -26,6 +27,7 @@ namespace Salary
             }
 
             tl.CalculateSalary(tl.LeadMembers);
+            Console.Read();
         }
     }
 }

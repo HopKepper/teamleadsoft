@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj" />
-    <ProjectReference Include="..\Persistance\Persistance.csproj" />
+    <PackageReference Include="NUnit" Version="3.13.1" />
   </ItemGroup>
+
 
 </Project>
