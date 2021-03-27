@@ -10,7 +10,8 @@ namespace Salary
         static void Main(string[] args)
         {
             TeamLead tl = new TeamLead(20, "Jame", "Felrt");
-            tl.ReadMeetingReview();
+            tl.ReadAsyncMeetingReview();
+
             IWorker eml_a = new Employer(23, "Alex", "Arak");
             IWorker frl_r = new Freelancer(24, "Rob", "Parker");
             IWorker eml_ar = new Employer(8, "Artur", "Arak");
@@ -22,6 +23,7 @@ namespace Salary
 
             foreach (var worker in tl.LeadMembers)
             {
+
                 Console.WriteLine("{0} {1}, please, log your time.", worker.Name, worker.Surname);
                 worker.LogTime();
             }

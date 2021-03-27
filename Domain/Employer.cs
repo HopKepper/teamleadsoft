@@ -34,10 +34,10 @@ namespace VMakarov.SalaryDev.Domain
 
         public Employer(double salary, string name, string surname)
         {
-            this.Salary = salary;
+            Salary = salary;
             this.name = name;
             this.surname = surname;
-            this.id = emp_id.GenerateID(this.status);
+            id = emp_id.GenerateID(this.status);
         }
         public void LogTime()
         {

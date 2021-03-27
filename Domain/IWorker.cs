@@ -1,6 +1,6 @@
 ﻿namespace VMakarov.SalaryDev.Domain
 {
-    public interface IWorker
+    public interface IWorker // TODO: Можно переделать в абстрактный класс, чтобы в дальнейшем использовать Строитель/Фабричный Метод
     {
         double Salary { get; set; }
         string Name { get; }

@@ -42,7 +42,7 @@ namespace VMakarov.SalaryDev.Domain
 
         public TeamLead(double salary, string name, string surname)
         {
-            this.Salary = salary;
+            Salary = salary;
             this.name = name;
             this.surname = surname;
             id = tl_id.GenerateID(this.status);
@@ -83,7 +83,7 @@ namespace VMakarov.SalaryDev.Domain
                 Console.WriteLine(worker.Salary);
             }
         }
-
+        
         public void CalculateSalary(List<IWorker> lworker)
         {
             foreach (var worker in lworker)
@@ -93,7 +93,7 @@ namespace VMakarov.SalaryDev.Domain
             }
         }
 
-        public async void ReadMeetingReview()
+        public async void ReadAsyncMeetingReview() // Добавлено для практики и ознакомления async await
         {
             using (StreamReader sr = new StreamReader(@"E:\vsproj\Salary\review.txt"))
             {
